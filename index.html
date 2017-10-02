@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<title>tetris</title>
+	<link rel="stylesheet" href="css/style.css">
+<body>
+<div>Use the direction key and the space key to operate</div>
+<div id="waiting"></div>
+<div class="square" id="local">
+ <div class="title">My game area</div>
+  <div class="game" id="local_game"></div>
+  <div class="next" id="local_next"></div>
+  <div class="info">
+  	<div>time：<span id="local_time">0</span>s</div>
+  	<div>score：<span id="local_score">0</span>分</div>
+    <div id="local_gameover"></div>
+  </div>
+  </div>
+  <div class="square" id="remote">
+ <div class="title">The game area of each other</div>
+  <div class="game" id="remote_game"></div>
+  <div class="next" id="remote_next"></div>
+  <div class="info">
+    <div>time：<span id="remote_time">0</span>s</div>
+    <div>score：<span id="remote_score">0</span>分</div>
+    <div id="remote_gameover"></div>
+  </div>
+  </div>
+  <script src="socket.io.js"></script>
+  <script src="js/square.js"></script>
+  <script src="js/squareFactory.js"></script>
+  <script src="js/remote.js"></script>
+  <script src="js/local.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
